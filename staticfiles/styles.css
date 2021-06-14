@@ -1149,7 +1149,14 @@ table{
 	  color: #333;
   }
 /*end of large screens*/
-ul .usl{
-	list-style: None;
+.back-image1{
+	background-image: url("abouts/images/no_picture.png");
+	background-size: 100% 99%;
+	background-repeat: no-repeat;
 }
 
+.back-image{
+	background-image: url("abouts/images/pic1.jpeg");
+	background-size: 100% 99%;
+	background-repeat: no-repeat;
+}
