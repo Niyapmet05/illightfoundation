@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    about | hillightfoundation  
+{% endblock %}
+
+{% block content %}
+    
+    <div class=" col-3">
+        {% for data in about %}
+        <div>
+   
+                <img src="{{data.avatar.url}}" alt="No image" width="200px">
+            
+        </div>
+        <div>
+            {{data.user.username}} {{data.user.last_name}}-{{data.function}}
+        </div>
+        {% endfor%}
+    </div>
+{% endblock %}

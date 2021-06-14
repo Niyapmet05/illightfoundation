@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    news | hillightfoundation  
+{% endblock %}
+
+{% block content %}
+    
+    <div class=" col-">
+        {% for data in news %}
+            <div class="top">
+                <a href='/stock/{{data.id}}' target="_blank">{{data.title}}</a>
+            
+            </div>
+            <div>{{data.news|truncatewords:"100"}}</div>
+            
+            <div>Author - {{data.Author.first_name}} {{data.Author.last_name }}</div>
+        {% endfor%}
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% block nav %}
+<div class=''>
+    <div class="menu env" id='menu'>
+        <ul class="">
+            <li><a href="{% url 'abouts:home' %}">Home</a></li>
+            <li><a href="{% url 'missions:mission' %}">What we do</a></li>
+            <li><a href="{% url 'abouts:about' %}">about us</a></li>
+            <li><a href="{% url 'contents:news' %}">Newsroom</a></li>
+            <li><a href="{% url 'donates:donate' %}">Donate</a></li>  
+        </ul>
+    </div>
+    <div id='sm-menu' class='env'>
+        <divc lass='col-75'>
+            <div class="drop">
+                <a class="horizontal-center"> Menu</a> 
+                <div class="drop-content">
+                    <div class="menu env" >
+                        <ul class="">
+                            <li><a href="{% url 'abouts:home' %}">Home</a></li>
+                            <li><a href="{% url 'missions:mission' %}">What we do</a></li>
+                            <li><a href="{% url 'abouts:about' %}">about us</a></li>
+                            <li><a href="{% url 'contents:news' %}">Newsroom</a></li>
+                            <li><a href="{% url 'donates:donate' %}">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

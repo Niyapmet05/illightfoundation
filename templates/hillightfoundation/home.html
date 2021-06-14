@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+    hillightfoundation  
+{% endblock %}
+
+{% block content %}
+    <div class="back-image1">
+        <h1 class="main">Welcome to hillightfoundation website</h1>
+   
+        {% for data in quote %}
+            <div class="top">
+                {{data.content}},
+                <a href='/stock/{{data.id}}' target="_blank">{{data.contributor}}</a>
+            
+        </div>
+        {% endfor%}
+    </div>
+    
+    <div class="back-image">
+   
+        {% for data in about %}
+            <div class="top">
+                <a href='/stock/{{data.id}}' target="_blank">{{data.title}}</a>
+            
+            </div>
+            <div>{{data.about}},</div>
+        {% endfor%}
+    </div>
+{% endblock %}

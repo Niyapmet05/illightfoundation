@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+   What we do | hillightfoundation  
+{% endblock %}
+
+{% block content %}
+    
+    <div class="">
+   
+        {% for data in action %}
+            <div class="top">
+                <a href='/stock/{{data.id}}' target="_blank">{{data.title}}</a>
+            
+            </div>
+            <div>{{data.mission}},</div>
+        {% endfor%}
+    </div>
+{% endblock %}
