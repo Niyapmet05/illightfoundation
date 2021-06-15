@@ -11,7 +11,7 @@
         {% for data in quote %}
             <div class="top">
                 {{data.content}},
-                <a href='/stock/{{data.id}}' target="_blank">{{data.contributor}}</a>
+                <a href='#'>{{data.contributor}}</a>
             
         </div>
         {% endfor%}
@@ -21,7 +21,7 @@
    
         {% for data in about %}
             <div class="top">
-                <a href='/stock/{{data.id}}' target="_blank">{{data.title}}</a>
+                <a href='#'>{{data.title}}</a>
             
             </div>
             <div>{{data.about}},</div>
