@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'n$mggde34yu_*y2h6+en64u39gnhd-*(czr*s$)eq1(-!t!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
+# DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
+DEBUG = True
 
 ALLOWED_HOSTS = ['stark-scrubland-81172.herokuapp.com','127.0.0.1']
 
@@ -137,11 +138,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
