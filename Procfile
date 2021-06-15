@@ -1,1 +1,1 @@
-web: gunicorn hlf.wsgi
+web: gunicorn hillightfoundation.wsgi
