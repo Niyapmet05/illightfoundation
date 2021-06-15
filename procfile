@@ -1,1 +1,1 @@
-web: gunicorn hillightfoundation.wsgi --log-file -
+web: gunicorn hillightfoundation.wsgi
