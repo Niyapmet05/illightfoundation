@@ -22,11 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-npqn$mggde34yu_*y2h6+en64u39gnhd-*(czr*s$)eq1(-!t!'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'n$mggde34yu_*y2h6+en64u39gnhd-*(czr*s$)eq1(-!t!')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'n$mggde34yu_*y2h6+n64u39gnhd-*(czr*s$)eq1(-!t!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
-DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
+
 
 ALLOWED_HOSTS = ['hillightf.herokuapp.com']
 
